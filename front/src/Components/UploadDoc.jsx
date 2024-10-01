@@ -37,7 +37,7 @@ const UploadDocuments = ({ caseId, token }) => {
         formData.append('document', selectedFile);
 
         try {
-            const response = await fetch(`http://localhost:3001/api/uploadDocument/${caseId}`, {
+            const response = await fetch(`https://advocate-q881.onrender.com/api/uploadDocument/${caseId}`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,

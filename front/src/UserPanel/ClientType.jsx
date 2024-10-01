@@ -12,7 +12,7 @@ const AddClientType = () => {
         const token = localStorage.getItem('token');
         const fetchuserid = localStorage.getItem('userID')
         try {
-            const response = await fetch('http://localhost:3001/api/clienttype', {
+            const response = await fetch('https://advocate-q881.onrender.com/api/clienttype', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

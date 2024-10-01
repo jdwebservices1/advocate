@@ -20,7 +20,7 @@ const SearchCaseByMonthYear = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:3001/api/searchByMonthYear', {
+            const response = await fetch('https://advocate-q881.onrender.com/api/searchByMonthYear', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

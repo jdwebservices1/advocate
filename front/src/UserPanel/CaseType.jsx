@@ -13,7 +13,7 @@ const CaseType = () => {
         const fetchuserid = localStorage.getItem('userID')
         try {
         
-            const response = await fetch('http://localhost:3001/api/casetype', {
+            const response = await fetch('https://advocate-q881.onrender.com/api/casetype', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

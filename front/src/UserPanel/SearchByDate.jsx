@@ -14,7 +14,7 @@ const SearchCaseByDate = () => {
 
     try {
       // Make a request to the search API
-      const response = await fetch('http://localhost:3001/api/searchByDate', {
+      const response = await fetch('https://advocate-q881.onrender.com/api/searchByDate', {
         method: 'POST', // Use POST because we're sending data in the body
         headers: {
           'Content-Type': 'application/json',

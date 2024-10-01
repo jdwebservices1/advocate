@@ -17,7 +17,7 @@ const ClientPayments = () => {
         
         const fetchPayments = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/api/casePayments/${caseId}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/casePayments/${caseId}`, {
                     headers: {
                         'Authorization': `Bearer ${token}` // Use the token from localStorage
                     }
@@ -39,7 +39,7 @@ const ClientPayments = () => {
 
         const fetchCaseDetails = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/api/clients/${caseId}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/clients/${caseId}`, {
                     headers: {
                         'Authorization': `Bearer ${token}` // Use the token from localStorage
                     }

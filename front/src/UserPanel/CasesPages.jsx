@@ -9,7 +9,7 @@ const CasesTab = ({ endpoint, token }) => {
     useEffect(() => {
         const fetchCases = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/api/${endpoint}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/${endpoint}`, {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,

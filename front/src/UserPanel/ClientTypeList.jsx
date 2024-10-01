@@ -14,7 +14,7 @@ const ClientTypeList = () => {
             const token = localStorage.getItem('token');
 
             try {
-                const response = await fetch('http://localhost:3001/api/clienttype', {
+                const response = await fetch('https://advocate-q881.onrender.com/api/clienttype', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -44,7 +44,7 @@ const ClientTypeList = () => {
 
         if (confirmDelete) {
             try {
-                const response = await fetch(`http://localhost:3001/api/clienttype/${id}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/clienttype/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${token}`

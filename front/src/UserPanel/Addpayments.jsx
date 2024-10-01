@@ -19,7 +19,7 @@ const AddPayments = () => {
     useEffect(() => {
         const fetchClients = async () => {
             try {
-                const response = await fetch('http://localhost:3001/api/clients', {
+                const response = await fetch('https://advocate-q881.onrender.com/api/clients', {
                     headers: {
                         'Authorization': `Bearer ${token}` // Use the token from localStorage
                     }
@@ -53,7 +53,7 @@ const AddPayments = () => {
         const fetchClientDetails = async () => {
             if (selectedClient) {
                 try {
-                    const response = await fetch(`http://localhost:3001/api/caseBalance/${selectedClient}`, {
+                    const response = await fetch(`https://advocate-q881.onrender.com/api/caseBalance/${selectedClient}`, {
                         headers: {
                             'Authorization': `Bearer ${token}` // Use the token from localStorage
                         }
@@ -90,7 +90,7 @@ const AddPayments = () => {
         };
 
         try {
-            const response = await fetch(`http://localhost:3001/api/addPayment/${selectedClient}`, {
+            const response = await fetch(`https://advocate-q881.onrender.com/api/addPayment/${selectedClient}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

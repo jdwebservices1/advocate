@@ -16,7 +16,7 @@ const UploadDocumentsList = () => {
             try {
                
                
-                const response = await fetch(`http://localhost:3001/api/caseDocuments/${caseId}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/caseDocuments/${caseId}`, {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,

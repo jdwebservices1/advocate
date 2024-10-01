@@ -34,7 +34,7 @@ const ClientUpdate = () => {
     useEffect(() => {
         const fetchClient = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/api/clients/${id}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/clients/${id}`, {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const data = await response.json();
@@ -65,13 +65,13 @@ const ClientUpdate = () => {
         const fetchDropdownData = async () => {
             try {
                 const [judgeRes, clientTypeRes, caseTypeRes] = await Promise.all([
-                    fetch('http://localhost:3001/api/judges', {
+                    fetch('https://advocate-q881.onrender.com/api/judges', {
                         headers: { 'Authorization': `Bearer ${token}` }
                     }),
-                    fetch('http://localhost:3001/api/clienttype', {
+                    fetch('https://advocate-q881.onrender.com/api/clienttype', {
                         headers: { 'Authorization': `Bearer ${token}` }
                     }),
-                    fetch('http://localhost:3001/api/casetype', {
+                    fetch('https://advocate-q881.onrender.com/api/casetype', {
                         headers: { 'Authorization': `Bearer ${token}` }
                     })
                 ]);
@@ -96,7 +96,7 @@ const ClientUpdate = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch(`http://localhost:3001/api/clients/${id}`, {
+            const response = await fetch(`https://advocate-q881.onrender.com/api/clients/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

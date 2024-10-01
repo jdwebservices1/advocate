@@ -14,7 +14,7 @@ const CaseTypeList = () => {
             const token = localStorage.getItem('token');
 
             try {
-                const response = await fetch('http://localhost:3001/api/casetype', {
+                const response = await fetch('https://advocate-q881.onrender.com/api/casetype', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -43,7 +43,7 @@ const CaseTypeList = () => {
 
         if (confirmDelete) {
             try {
-                const response = await fetch(`http://localhost:3001/api/casetype/${id}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/casetype/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${token}`

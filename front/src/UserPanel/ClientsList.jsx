@@ -11,7 +11,7 @@ const ClientList = () => {
     useEffect(() => {
         const fetchClients = async () => {
             try {
-                const response = await fetch('http://localhost:3001/api/clients', {
+                const response = await fetch('https://advocate-q881.onrender.com/api/clients', {
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 console.log(response);
@@ -36,7 +36,7 @@ const ClientList = () => {
     const handleDelete = async (id) => {
         if (window.confirm('Are you sure you want to delete this client?')) {
             try {
-                const response = await fetch(`http://localhost:3001/api/client/${id}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/client/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${token}`,

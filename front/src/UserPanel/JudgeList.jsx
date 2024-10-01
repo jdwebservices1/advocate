@@ -14,7 +14,7 @@ const JudgeList = () => {
             const token = localStorage.getItem('token');
 
             try {
-                const response = await fetch('http://localhost:3001/api/judges', {
+                const response = await fetch('https://advocate-q881.onrender.com/api/judges', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }

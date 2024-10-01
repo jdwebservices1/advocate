@@ -17,7 +17,7 @@ const UpdateStatus = () => {
     useEffect(() => {
         const fetchStatusHistory = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/api/clients/${id}`, { // Adjust the endpoint to your API
+                const response = await fetch(`https://advocate-q881.onrender.com/api/clients/${id}`, { // Adjust the endpoint to your API
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -50,7 +50,7 @@ const UpdateStatus = () => {
         };
 
         try {
-            const response = await fetch(`http://localhost:3001/api/updateStatus/${id}`, {
+            const response = await fetch(`https://advocate-q881.onrender.com/api/updateStatus/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

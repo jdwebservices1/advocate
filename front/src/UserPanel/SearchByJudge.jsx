@@ -25,7 +25,7 @@ const SearchCaseByJudge = () => {
         }
     
         try {
-            const response = await fetch('http://localhost:3001/api/searchByJudge', {
+            const response = await fetch('https://advocate-q881.onrender.com/api/searchByJudge', {
                 method: 'POST', // Change to POST
                 headers: {
                     'Authorization': `Bearer ${token}`,

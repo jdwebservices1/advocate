@@ -42,7 +42,7 @@ const Judge = () => {
 
         // Send a POST request to add the judge
         try {
-            const response = await fetch('http://localhost:3001/api/judges', {
+            const response = await fetch('https://advocate-q881.onrender.com/api/judges', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

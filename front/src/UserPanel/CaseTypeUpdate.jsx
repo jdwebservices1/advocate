@@ -21,7 +21,7 @@ const UpdateCaseType = () => {
         const token = localStorage.getItem('token');
 
         try {
-            const response = await fetch(`http://localhost:3001/api/casetype/${id}`, {
+            const response = await fetch(`https://advocate-q881.onrender.com/api/casetype/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const UpdateCaseType = () => {
         const token = localStorage.getItem('token');
 
         try {
-            const response = await fetch(`http://localhost:3001/api/casetype/${id}`, {
+            const response = await fetch(`https://advocate-q881.onrender.com/api/casetype/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

@@ -15,7 +15,7 @@ const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:3001/api/signup', {
+        const response = await fetch('https://advocate-q881.onrender.com/api/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
