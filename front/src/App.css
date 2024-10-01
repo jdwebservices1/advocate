@@ -1,0 +1,8 @@
+/* Dashboard.css */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0; /* Remove gap between dropdown and parent */
+}
