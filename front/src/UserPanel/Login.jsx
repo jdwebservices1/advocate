@@ -1,6 +1,6 @@
 // Login.js
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -53,6 +53,10 @@ const Login = () => {
                     <input type="password" className="form-control" id="password" name="password" value={formData.password} onChange={handleChange} required />
                 </div>
                 <button type="submit" className="btn btn-primary">Login</button>
+
+                <div className='row py-3'>
+                    <Link className='text-dark text-decoration-none' to='/signup'>Click here for Sign Up!</Link>
+                </div>
             </form>
         </div>
     );
