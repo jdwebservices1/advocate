@@ -40,8 +40,8 @@ const SearchCaseByDate = () => {
     <>
     <Navbar />
     <div className="container mt-5">
-      <h2>Search Cases by Date</h2>
-      
+        <h2 className='pb-5'>Search Cases by Date</h2>
+        <div className='shadow mb-5 p-4'>
       {/* Search form */}
       <form onSubmit={handleSearch} className="mb-4">
         <div className="mb-3">
@@ -57,7 +57,7 @@ const SearchCaseByDate = () => {
         </div>
         <button type="submit" className="btn btn-primary">Search</button>
       </form>
-
+</div>
       {/* Error message */}
       {error && <div className="alert alert-danger">{error}</div>}
 

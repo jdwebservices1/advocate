@@ -65,7 +65,7 @@ const ClientPayments = () => {
             <Navbar />
             <div className="container mt-5">
             <Link to={`/Addpayments/${caseId}`} className="btn btn-primary mb-3">Add New Payment</Link>
-            {/* <h2>Payments for Case ID: {caseId}</h2> */}
+            {/*   <h2 className='pb-5'>Payments for Case ID: {caseId}</h2> */}
                 {error && <div className="alert alert-danger">{error}</div>}
                 
                 {/* Display client name */}

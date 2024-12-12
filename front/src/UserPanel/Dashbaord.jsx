@@ -23,7 +23,7 @@ const Dashboard = () => {
         localStorage.removeItem('email');
         localStorage.removeItem('name');
         localStorage.removeItem('userID');
-        
+
         // Redirect to login page
         navigate('/login');
     };
@@ -35,15 +35,23 @@ const Dashboard = () => {
 
     return (
         <>
-        <Navbar />
-        <div className="container mt-5">
-            <h2>Welcome, {name}</h2>
-            <p>Your email: {email}</p>
-            
-            <button className="btn btn-danger" onClick={handleLogout}>Logout</button>
-        
-            <CasesPage />
-        </div>
+            <Navbar />
+            <div className="container mt-5">
+                <div className='row'>
+                    <div className='col'>
+                        <p className='m-0'>Welcome, <strong>{name}</strong></p>
+                        <p>Your email: {email}</p>
+                        <CasesPage />
+
+
+                    </div>
+                    
+
+                </div>
+
+
+
+            </div>
         </>
     );
 };

@@ -36,7 +36,7 @@ const ClientList = () => {
     const handleDelete = async (id) => {
         if (window.confirm('Are you sure you want to delete this client?')) {
             try {
-                const response = await fetch(`https://advocate-q881.onrender.com/api/client/${id}`, {
+                const response = await fetch(`https://advocate-q881.onrender.com/api/clients/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${token}`,
@@ -64,25 +64,30 @@ const ClientList = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Client List</h2>
+              <h2 className='pb-5'>Client List</h2>
             <table className="table table-striped">
                 <thead>
                     <tr>
                         <th>Client Name</th>
                         <th>Mobile</th>
-                        <th>Email</th>
+                        <th>Judge</th>
                         <th>Action</th>
                         <th>Documents</th>
-                        <th>Documents List</th>
+                        
                         <th>Payments</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
+                    {
+                        console.log(clients,"clients")
+                        
+                    }
                     {clients.map((client) => (
                         <tr key={client._id}>
                             <td>{client.clientName} vs {client.secondPartyName}</td>
                             <td>{client.mobile}</td>
-                            <td>{client.email}</td>
+                            <td>{client.judge.judgeName}</td>
                             <td>
                                 <button
                                     className="btn btn-primary btn-sm"
@@ -98,10 +103,10 @@ const ClientList = () => {
                                 </button>
                             </td>
 
-                            <td><Link to={`/clientDocumentUpload/update/${client._id}`}>Upload</Link></td>
-                            <td><Link to={`/clientDocumentlist/${client._id}`}>List</Link></td>
-                            <td><Link to={`/addPayments/${client._id}`}>Add</Link> | <Link to={`/ClientPayments/${client._id}`}>List</Link></td>
-                            <td><Link to={`/UpdateStatus/${client._id}`}>Status Update</Link> </td>
+                            <td><Link to={`/clientDocumentUpload/update/${client._id}`}><i class="fa-solid fa-upload"></i></Link> | <Link to={`/clientDocumentlist/${client._id}`}><i class="fa-solid fa-file"></i></Link></td>
+                          
+                            <td><Link className='btn btn-danger btn-sm' to={`/addPayments/${client._id}`}>Add</Link>  <Link className='btn btn-success btn-sm' to={`/ClientPayments/${client._id}`}>List</Link></td>
+                            <td><Link className='btn btn-success btn-sm' to={`/UpdateStatus/${client._id}`}>Status Update</Link> </td>
                         </tr>
                     ))}
                 </tbody>

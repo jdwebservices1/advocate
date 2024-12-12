@@ -79,7 +79,7 @@ const UpdateStatus = () => {
         <>
             <Navbar />
             <div className="container mt-5">
-                <h2>Update Client Status</h2>
+                  <h2 className='pb-5'>Update Client Status</h2>
                 {message && <div className="alert alert-success">{message}</div>}
                 {error && <div className="alert alert-danger">{error}</div>}
                 

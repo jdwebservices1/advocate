@@ -69,7 +69,7 @@ const ClientTypeList = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Client Type List</h2>
+              <h2 className='pb-5'>Client Type List</h2>
             <Link to="/addclienttype" className="btn btn-primary mb-3">Add New Client Type</Link>
             <table className="table table-striped">
                 <thead>

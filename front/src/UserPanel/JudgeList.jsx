@@ -44,7 +44,7 @@ const JudgeList = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Judge List</h2>
+              <h2 className='pb-5'>Judge List</h2>
             <Link to="/judges/add" className="btn btn-primary mb-3">Add New Judge</Link>
             <table className="table table-striped">
                 <thead>

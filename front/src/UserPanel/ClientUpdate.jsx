@@ -138,7 +138,7 @@ const ClientUpdate = () => {
 
     return (
         <div className="container mt-5">
-            <h2>Edit Client</h2>
+              <h2 className='pb-5'>Edit Client</h2>
             <form onSubmit={handleSubmit}>
                 <div className='row'>
                     {/* Form fields similar to Client.jsx */}

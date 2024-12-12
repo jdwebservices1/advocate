@@ -39,7 +39,8 @@ const CaseType = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Add Case Type </h2>
+              <h2 className='pb-5'>Add Case Type </h2>
+              <div className='shadow mb-5 p-4'>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label className="form-label">Case Type Name</label>
@@ -53,6 +54,7 @@ const CaseType = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Add Case Type</button>
             </form>
+        </div>
         </div>
         </>
     );

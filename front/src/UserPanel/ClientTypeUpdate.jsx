@@ -67,7 +67,7 @@ const UpdateClientType = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Update Client Type</h2>
+              <h2 className='pb-5'>Update Client Type</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label className="form-label">Client Type Name</label>

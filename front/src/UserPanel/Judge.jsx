@@ -72,7 +72,11 @@ const Judge = () => {
         <>
          <Navbar />
         <div className="container mt-5">
-            <h2>Add New Judge</h2>
+              <h2 className='pb-5'>Add New Judge</h2>
+
+              <div className='shadow mb-5 p-4'>
+
+              
             <form onSubmit={handleSubmit}>
                 <div className="form-group row">
                 <div className="mb-3 col-lg-4 col-md-6">
@@ -186,6 +190,7 @@ const Judge = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Add Judge</button>
             </form>
+        </div>
         </div>
         </>
     );

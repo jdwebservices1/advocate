@@ -58,7 +58,7 @@ const UploadDocumentsList = () => {
         <>
         <Navbar />
         <div className="container py-5">
-            <h2>Documents for Case ID: {caseId}</h2>
+            <h2 className='pb-5'>Documents for Case ID: {caseId}</h2>
             <ul className="list-group">
                 {documents.map((document) => (
                     <li key={document._id} className="list-group-item">

@@ -87,7 +87,7 @@ const UpdateJudge = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Update Judge</h2>
+              <h2 className='pb-5'>Update Judge</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group row">
                 <div className="mb-3 col-lg-4 col-md-6">

@@ -68,7 +68,7 @@ const UpdateCaseType = () => {
 
     return (
         <div className="container mt-5">
-            <h2>Update Case Type</h2>
+              <h2 className='pb-5'>Update Case Type</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label className="form-label">Case Type Name</label>

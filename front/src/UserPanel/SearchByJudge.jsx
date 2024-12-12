@@ -57,8 +57,8 @@ const SearchCaseByJudge = () => {
         <>
         <Navbar />
         <div className="container mt-4">
-            <h2>Search Cases by Judge</h2>
-
+              <h2 className='pb-5'>Search Cases by Judge</h2>
+              <div className='shadow mb-5 p-4'>
             {/* Search Form */}
             <form onSubmit={handleSearch}>
                 <div className="mb-3">
@@ -74,7 +74,7 @@ const SearchCaseByJudge = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Search</button>
             </form>
-
+</div>
             {/* Loading */}
             {loading && <div className="mt-3">Loading...</div>}
 

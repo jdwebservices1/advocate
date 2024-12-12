@@ -120,9 +120,10 @@ const AddPayments = () => {
         <>
             <Navbar />
             <div className="container mt-5">
-                <h2>Add Payment</h2>
+                  <h2 className='pb-5'>Add Payment</h2>
                 {message && <div className="alert alert-success">{message}</div>}
                 {error && <div className="alert alert-danger">{error}</div>}
+                <div className='shadow mb-5 p-4'>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <label htmlFor="client" className="form-label">Select Client</label>
@@ -193,6 +194,7 @@ const AddPayments = () => {
                     </div>
                     <button type="submit" className="btn btn-primary">Submit Payment</button>
                 </form>
+                </div>
             </div>
         </>
     );

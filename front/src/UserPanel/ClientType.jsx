@@ -38,7 +38,8 @@ const AddClientType = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Add Client Type</h2>
+              <h2 className='pb-5'>Add Client Type</h2>
+              <div className='shadow mb-5 p-4'>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label className="form-label">Client Type Name</label>
@@ -52,6 +53,7 @@ const AddClientType = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Add Client Type</button>
             </form>
+        </div>
         </div>
         </>
     );

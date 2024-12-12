@@ -70,7 +70,7 @@ const CaseTypeList = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Case Type List</h2>
+              <h2 className='pb-5'>Case Type List</h2>
             <Link to="/addcasetype" className="btn btn-primary mb-3">Add New Case Type</Link>
             <table className="table table-striped">
                 <thead>

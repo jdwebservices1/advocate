@@ -61,7 +61,7 @@ const UploadDocuments = ({ caseId, token }) => {
 
     return (
         <div className="container mt-4">
-            <h2>Upload Document</h2>
+              <h2 className='pb-5'>Upload Document</h2>
             {error && <div className="alert alert-danger">{error}</div>}
             {uploadStatus && <div className="alert alert-success">{uploadStatus}</div>}
 

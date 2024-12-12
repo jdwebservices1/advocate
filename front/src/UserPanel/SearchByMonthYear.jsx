@@ -45,8 +45,8 @@ const SearchCaseByMonthYear = () => {
         <>
         <Navbar />
         <div className="container mt-5">
-            <h2>Search Cases by Month and Year</h2>
-
+              <h2 className='pb-5'>Search Cases by Month and Year</h2>
+              <div className='shadow mb-5 p-4'>
             <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-md-6">
@@ -95,7 +95,7 @@ const SearchCaseByMonthYear = () => {
                     Search Cases
                 </button>
             </form>
-
+</div>
             {error && (
                 <div className="alert alert-danger mt-4" role="alert">
                     {error}
