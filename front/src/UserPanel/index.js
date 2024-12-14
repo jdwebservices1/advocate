@@ -21,6 +21,7 @@ import SearchCaseByMonthYear from "./SearchByMonthYear";
 import Addpayments from "./Addpayments";
 import ClientPayments from "./ClientPayments"
 import UpdateStatus from "./UpdateStatus";
+import Home from "./Home"
 
 export {
     Signup,
@@ -45,6 +46,7 @@ export {
     SearchCaseByMonthYear,
     Addpayments,
     ClientPayments,
-    UpdateStatus
+    UpdateStatus,
+    Home
 
 }

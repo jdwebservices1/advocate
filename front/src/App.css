@@ -4,6 +4,9 @@ body{
   font-weight: 500;
   font-style: normal;
 }
+p{
+  font-size: 14px;
+}
 /* Dashboard.css */
 .navbar-nav .dropdown:hover .dropdown-menu {
   display: block;

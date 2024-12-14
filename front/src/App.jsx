@@ -1,7 +1,7 @@
 import './App.css';
 import {Signup,Login, Dashboard, Clients,ClientList,ClientUpdate, Judge, JudgeList, UpdateJudge,
   CaseType, CaseTypeList,UpdateCaseType, ClientType, ClientTypeList, UpdateClientType,UploadDocumentsList, DocumentUploadForm
-  ,SearchCaseByJudge, SearchCaseByDate, SearchCaseByMonthYear, Addpayments, UpdateStatus,ClientPayments
+  ,SearchCaseByJudge, SearchCaseByDate, SearchCaseByMonthYear, Addpayments, UpdateStatus,ClientPayments, Home
 } from './UserPanel/index'
 
 // import { InvoiceProvider } from './components/InvoiceContext';
@@ -18,7 +18,7 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route exact path='/' element={<Dashboard/>} />
+            <Route exact path='/' element={<Home/>} />
             <Route exact path='/login' element={<Login/>} />
             <Route exact path='/signup' element={<Signup/>} />
             <Route exact path='/dashboard' element={<Dashboard/>} />
